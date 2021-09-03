@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200">
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="7dp"
+            android:src="@mipmap/icon_xiayibu"
+            app:layout_constraintBottom_toBottomOf="@id/tv_1"
+            app:layout_constraintLeft_toRightOf="@id/tv_1"
+            app:layout_constraintTop_toTopOf="@id/tv_1" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@id/tv_1"
+            app:layout_constraintLeft_toRightOf="@+id/iv_1"
+            app:layout_constraintTop_toTopOf="@id/tv_1" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="7dp"
+            android:src="@mipmap/icon_xiayibu"
+            app:layout_constraintBottom_toBottomOf="@id/tv_2"
+            app:layout_constraintLeft_toRightOf="@id/tv_2"
+            app:layout_constraintTop_toTopOf="@id/tv_2" />
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            app:layout_constraintLeft_toRightOf="@+id/iv_2"
+            app:layout_constraintTop_toBottomOf="@+id/tv_2"
+            app:layout_constraintTop_toTopOf="@id/tv_2" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/shape_rectangle_black_corners_15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll" />
+
+    <com.example.myapplication.DragTextView
+        android:id="@+id/dtv_1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_rectangle_black_corners_15"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll" />
+
+    <ImageView
+        android:id="@+id/iv_11"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintRight_toLeftOf="@+id/iv_12"
+        android:src="@drawable/shape_rectangle_black_corners_15"
+        app:layout_constraintLeft_toRightOf="@+id/iv_10"
+        app:layout_constraintTop_toBottomOf="@id/ll" />
+
+    <com.example.myapplication.DragTextView
+        android:id="@+id/dtv_2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_rectangle_black_corners_15"
+        android:clickable="true"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintRight_toLeftOf="@+id/iv_12"
+        app:layout_constraintLeft_toRightOf="@+id/iv_10"
+        app:layout_constraintTop_toBottomOf="@id/ll" />
+
+    <ImageView
+        android:id="@+id/iv_12"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="80dp"
+        android:src="@drawable/shape_rectangle_black_corners_15"
+        app:layout_constraintLeft_toRightOf="@+id/iv_11"
+        app:layout_constraintTop_toBottomOf="@id/ll" />
+
+    <com.example.myapplication.DragTextView
+        android:id="@+id/dtv_3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_rectangle_black_corners_15"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_marginRight="80dp"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/iv_11"
+        app:layout_constraintTop_toBottomOf="@id/ll" />
+
+    <TextView
+        android:id="@+id/tv_select"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="选好了"
+        app:layout_constraintBottom_toTopOf="@+id/tv_show_correct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tv_show_correct"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="查看正确答案"
+        app:layout_constraintBottom_toTopOf="@+id/bt_seven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bt_seven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="七个选项"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
